@@ -52,6 +52,19 @@ async function question1() {
     return drawChart(answers.question_1);
 }
 
+async function question2() {
+    const answers = await inquirer.prompt({
+        name: 'question_2',
+        type: 'list',
+        message: `Would you like to draw again?\n`,
+        choices: [
+          'Yes',
+          'No',
+        ],
+    });
+    return answers.question_2 === 'Yes' ? await question1() : process.exit(0);
+}
+
 async function drawChart(chartType) {
     let config = {
         colors: [
@@ -94,3 +107,6 @@ console.clear();
 await welcome();
 await askName();
 await question1();
+do {
+    await question2();
+} while (true);
