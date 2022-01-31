@@ -1,0 +1,23 @@
+{
+  "name": "hainish-cli",
+  "version": "1.0.0",
+  "description": "My 1st Node.js command line app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Hainish",
+  "license": "ISC",
+  "bin": "./index.js",
+  "dependencies": {
+    "asciichart": "^1.5.25",
+    "chalk": "^5.0.0",
+    "chalk-animation": "^1.6.0",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.0",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0"
+  }
+}
